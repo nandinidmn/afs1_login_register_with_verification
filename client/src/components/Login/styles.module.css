@@ -11,7 +11,6 @@
 	width: 900px;
 	height: 500px;
 	display: flex;
-	border-radius: 10px;
 	box-shadow: 0px 3px 3px -2px rgb(0 0 0 / 20%),
 		0px 3px 4px 0px rgb(0 0 0 / 14%), 0px 1px 8px 0px rgb(0 0 0 / 12%);
 }
@@ -23,8 +22,6 @@
 	align-items: center;
 	justify-content: center;
 	background-color: white;
-	border-top-left-radius: 10px;
-	border-bottom-left-radius: 10px;
 }
 
 .form_container {
@@ -43,7 +40,6 @@
 	border: none;
 	width: 370px;
 	padding: 15px;
-	border-radius: 10px;
 	background-color: #edf5f3;
 	margin: 5px 0;
 	font-size: 14px;
@@ -54,9 +50,8 @@
 	padding: 15px;
 	margin: 5px 0;
 	font-size: 14px;
-	background-color: #f34646;
-	color: white;
-	border-radius: 5px;
+	background-color: #bcb4b4;
+	color: black;
 	text-align: center;
 }
 
@@ -66,9 +61,7 @@
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
-	background-color: #3bb19b;
-	border-top-right-radius: 10px;
-	border-bottom-right-radius: 10px;
+	background-color: #58bbcf;
 }
 
 .right h1 {
@@ -84,7 +77,6 @@
 	outline: none;
 	padding: 12px 0;
 	background-color: white;
-	border-radius: 20px;
 	width: 180px;
 	font-weight: bold;
 	font-size: 14px;
@@ -92,7 +84,7 @@
 }
 
 .green_btn {
-	background-color: #3bb19b;
+	background-color: #58bbcf;
 	color: white;
 	margin: 10px;
 }

@@ -1,7 +1,7 @@
-require("dotenv").config();
+require("dotenv").config();//loads the env file
 const express = require("express");
 const app = express();
-const cors = require("cors");
+const cors = require("cors");//middleware 
 const connection = require("./db");
 const userRoutes = require("./routes/users");
 const authRoutes = require("./routes/auth");
@@ -11,6 +11,9 @@ connection();
 
 // middlewares
 app.use(express.json());
+// adds a middleware to parse JSON request bodies into JavaScript objects.
+
+
 app.use(cors());
 
 // routes

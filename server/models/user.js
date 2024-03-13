@@ -8,9 +8,11 @@ const userSchema = new mongoose.Schema({
 	lastName: { type: String, required: true },
 	email: { type: String, required: true },
 	password: { type: String, required: true },
+	verified: { type: Boolean, default: false },
 });
 
 userSchema.methods.generateAuthToken = function () {
+	// Create a new token using the jwt.sign method from the jsonwebtoken library
 	const token = jwt.sign({ _id: this._id }, process.env.JWTPRIVATEKEY, {
 		expiresIn: "7d",
 	});
